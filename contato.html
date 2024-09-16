@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato</title>
+        <meta name="author" content="gabriel henrique">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/css-site.css"> 
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="icon" href="img/hollow(2).png">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        </nav>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card contact-form">
+                    <h2>Contato</h2>
+                    <p class="Justify">Se você tiver alguma dúvida ou precisar de mais informações, sinta-se à vontade para nos contatar através do formulário abaixo. Responderei o mais rápido possível!</p>
+                    <form action="enviar-mensagem.php" method="post">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefone (opcional)</label>
+                            <input type="tel" class="form-control" id="phone" name="phone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="card contact-info">
+                    <h2>Informações de Contato</h2>
+                    <p>Se preferir, você também pode entrar em contato conosco diretamente:</p>
+                    <ul>
+                        <li><strong>Telefone Comercial:</strong> (11) 1234-5678</li>
+                        <li><strong>Email Comercial:</strong> contato@exemplo.com</li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div class="rightcolumn">
+                <div class="card">
+                    <h2>Links Sociais</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="https://www.facebook.com" target="_blank" class="btn btn-primary">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://twitter.com" target="_blank" class="btn btn-info">
+                                <i class="fab fa-twitter"></i> Twitter
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="https://www.linkedin.com" target="_blank" class="btn btn-secondary">
+                                <i class="fab fa-linkedin-in"></i> LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <p> Copyright 2024 por Ga069767 Data. Todos os direitos reservados.</p>
+        </div>
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <script src="JS/all.min.js"></script>
+        <script src="JS/h.js"></script> 
+    </body>
+</html>

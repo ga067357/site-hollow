@@ -1,0 +1,102 @@
+.img-hollow {
+     width: 70%;
+     max-width: 100%; /* Adiciona uma largura máxima para garantir responsividade */
+     height: auto; /* Mantém a proporção da imagem ao redimensionar */
+}
+
+.Informação {
+     color: grey;
+}
+
+.Justify {
+     text-align: justify;
+}
+
+.table-img {
+     display: block;
+     margin: 0 auto;
+}
+
+.table-img-2 {
+     display: block;
+     margin: 0 auto;
+   }
+
+   /* Contêiner da tabela */
+   .table-container {
+     width: 100%;
+     overflow: hidden;
+   }
+
+   .table {
+     width: 100%;
+     table-layout: fixed;
+   }
+
+   /* Estilo para as células da tabela */
+   .table th, .table td {
+     word-wrap: break-word;
+     vertical-align: middle;
+     text-align: center;
+     padding: 10px;
+   }
+
+   /* Estilo para as descrições com separador */
+   .desc {
+     text-align: left;
+   }
+
+   .separator {
+     margin-top: 10px;
+     font-style: italic;
+     color: #ccc;
+   }
+ 
+
+.table-img-3 {
+     display: block;
+     margin-left: 80px;
+     margin-right: 80px;
+}
+
+td p {
+     text-align: center;
+}
+.body-hollow {
+max-width: 100%;
+}
+.transformar {
+     transform: rotate(45deg);
+}
+.dark-mode {
+     background-color: #333;
+     color: #fff;
+ }
+ 
+ .dark-mode .card {
+     background-color: #000;
+     color: #fff;
+ }
+ 
+ .card.bg-light {
+     background-color: #f8f9fa;
+     color: #212529;
+ }
+ 
+ .card.bg-dark {
+     background-color: #212529;
+     color: #fff;
+ }
+ 
+
+.badge :hover{
+     background-color: rgb(191, 191, 191);
+}
+.modal-header h5{
+     color: #000000 !important;
+}
+
+.modal-body p{
+     color: #000000;
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mapas</title>
+      <meta name="author" content="gabriel henrique">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/css-site.css"> 
+      <link rel="stylesheet" href="css/estilo.css">
+      <link rel="icon" href="img/hollow(2).png">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary dark-mode" id="myNavbar">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+              <img src="img/Hollow.svg" width="32" height="32">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#"><strong>Mapas</strong></a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="amuletos.html">Amuletos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="minerios-palidos.html">Minérios Pálidos</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="dlcs.html">DLCs</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Items
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="ferrao.html">Ferrão</a></li>
+                      <li><a class="dropdown-item" href="artes.html">Artes do Ferrão</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+              </ul>
+              <span class="badge"><button type="button" class="btn" onclick="toggleTheme()" width="20" height="20"><i class="fa-solid fa-circle-half-stroke " style="padding-left: 5px; padding-right: 15px;"></i>Light/Dark theme</button></span>
+          </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card" id="mycard">
+          <h2>O que são os mapas</h2>
+          <p class="Justify">Os mapas, como o próprio nome diz, são os pedaços de papéis utilizados para se localizar no jogo. Mas no Hollow Knight, há algo que você precisa saber. Para que seu personagem seja mostrado exatamente onde ele está, é necessário estar utilizando um amuleto que indica onde seu personagem está. Além disso, você precisa comprar o papel e a caneta, caso contrário, não poderá expandir o mapa com os locais que você explorar.</p>
+
+          <!-- Carousel -->
+          <div id="mapCarousel" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/mapa.jpg" class="d-block w-100" alt="Mapa da área X">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mapa1.jpeg" class="d-block w-100" alt="Mapa da área Y">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mapa2.webp" class="d-block w-100" alt="Mapa da área Z">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#mapCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#mapCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+          
+        </div>
+        <div class="card" id="mycard">
+          <h2>Onde comprar os mapas</h2>
+          <p class="Justify">No jogo Hollow Knight, você pode comprar mapas de um personagem chamado Cornifer, que pode ser encontrado em várias áreas do jogo. Se você não encontrar Cornifer em uma área (geralmente por derrotar o chefe da área antes de falar com ele), sua esposa Iselda venderá os mapas na loja dela em Dirtmouth por um preço um pouco maior.</p>
+          <p class="Justify">Aqui estão algumas localizações de Cornifer e como encontrar os mapas em cada região:</p>
+          <ul>
+            <li><strong>Antiga (Ancient Basin):</strong> Da plataforma da Tramvia, siga pela passagem à esquerda até a câmara principal. Cornifer está diretamente abaixo de uma fonte, à direita.</li>
+            <li><strong>Cidade das Lágrimas (City of Tears):</strong> Após descer totalmente, indo para a direita e subindo um elevador, lute contra inimigos para encontrar Cornifer acima de um banco, que custará 150 Geo para desbloquear.</li>
+            <li><strong>Pico de Cristal (Crystal Peak):</strong> para a direita, atravessando correias transportadoras e um grande abismo, até encontrar Cornifer após subir usando o Mantis Claw.</li>
+            <li><strong>Ninho profundo (Deepnest:)</strong> atrás de uma saliência, à esquerda e acima da entrada após derrotar os Lordes Mantis, ou vindo dos Jardins da Rainha para o norte.</li>
+            <li><strong>Canyon da névoa (Fog Canyon):</strong> Pode ser encontrado utilizando a Capa Sombria para passar pelo Portão Sombrio, ou nadando com a Lágrima de Isma através de uma piscina de ácido.</li>
+            <li><strong>Encruzilhada esquecida (Forgotten Crossroads):</strong> Desça pelo poço de Dirtmouth, vá à esquerda, desça e entre na sala ao fundo.</li>
+            <li><strong>Lixo Fúngico (Fungal Wastes):</strong> Siga para a direita a partir da Estação da Rainha, descendo e indo para a esquerda.</li>
+            <li><strong>Caminho Verde (Greenpath):</strong> Continue à esquerda, depois desça e vá para a direita até encontrar Cornifer.</li>
+            <li><strong>Penhascos Uivantes (Howling Cliffs):</strong> Cornifer está num caminho à direita, aproximadamente à metade dos penhascos.</li>
+            <li><strong>Borda do Reino (Kingdom’s Edge):</strong> Acesso mais rápido pela Cidade das Lágrimas, especificamente a Estação do Rei.</li>
+            <img src="img/cornifer.jpg" class="img-fluid" alt="Cornifer">
+            <p class="Justify">Vendedor de mapas</p>
+          </ul>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="card" id="mycard">
+            <h2>Fato curioso sobre Hollow Knight</h2>
+            <p class="Justify">Você sabia que o personagem principal de Hollow Knight foi retirado de um projeto anterior da Team Cherry chamado Hungry Knight,
+            que foi realizado em menos de 48 horas em um encontro de desenvolvedores? Isso é um exemplo interessante de como as ideias podem 
+            evoluir e se transformar ao longo do tempo! 😊</p>
+            <div id="liveAlertPlaceholder"></div>
+            <button type="button" class="btn btn-secondary" id="liveAlertBtn">Gostaria de aprender uma curiosidade?</button>
+        </div>
+        <div class="card" id="mycard">
+          <h3>Top runners</h3>
+          <p>em primeiro 1°lugar skate king com 31m 24s de LRT(load removed time)</p>
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/-rqbJHLa9fM?si=XmaqCAe8doHWdbGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          <p>video no qual ele alcançou 1°lugar</p>
+          <p>Caso queira ver diretamente no Youtube<a href="https://youtu.be/-rqbJHLa9fM" class="badge bg-dark" target="_blank">clique aqui</a></p>
+        </div>
+          <div class="card" id="mycard">
+            <p>já em 2°lugar temos lep com 31m 39s de LRT</p>
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/l0-7DY13QqM" title="HK Any% NMG in 31:39 (Current PB)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            <p>video no qual ele alcançou 2°lugar</p>
+            <div class="alert alert-warning" role="alert">
+              Esse vídeo não está funcionando. <a href="https://youtu.be/-rqbJHLa9fM" class="alert-link">Clique aqui</a> para vê-lo completo.
+            </div>
+          </div>
+          <div class="card" id="mycard">
+            <p>e por ultimo mas não menos importante temos jackmanmarcus com 31m 46s de LRT </p>
+              <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/5KSSwCc_Q6Y?si=lcpUgEOgu43Voa2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            <p>video no qual ele alcançou 3°lugar</p>
+            <p>Caso queira ver diretamente no Youtube<a href="https://youtu.be/5KSSwCc_Q6Y?si=4nlGekyNKxAzQIjF" class="badge bg-dark" target="_blank">clique aqui</a></p>
+        </div>
+      </div>
+    <div class="footer">
+      <p> Copyright 2024 por Ga069767 Data. Todos os direitos reservados.</p>
+    </div>
+
+      <script src="JS/bootstrap.bundle.min.js"></script>
+      <script src="JS/all.min.js"></script>
+      <script src="JS/h.js"></script> 
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
