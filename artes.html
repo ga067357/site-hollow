@@ -13,7 +13,7 @@
     <link rel="icon" href="img/hollow(2).png">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="myNavbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html">
           <img src="img/Hollow.svg" width="32" height="32">
@@ -53,7 +53,7 @@
     </nav>
     <div class="row">
       <div class="leftcolumn">
-        <div class="card">
+        <div class="card" id="mycard">
           <h2>O que são as artes do ferrão?</h2>
           <p class="Justify">Artes do Ferrão são habilidades ensinados ao Cavaleiro pelos Mestres do Ferrão. 
             Executar uma Arte do Ferrão envolve segurar o botão ATAQUE para carregar, 
@@ -79,56 +79,93 @@
                   (então pressione ATAQUE várias vezes, opicional)</p>
                   <p>=================================================</p>
                   <p>O Mestre do Ferrão Mato é encontrado nos Penhascos Uivantes.</p></td>
-                </tr> 
-              </tbody> 
+                </tr>
+                <tr>
+                  <td><img SRC="img/artes/corte.png" class="table-img" height="100" width="100"><p>corte impulsionado</p></td>
+                  <td><p>Adquirido de Mestre do Ferrão Oro</p>
+                  <p>A Arte do Ferrão marca do Mestre do Ferrão Oro.
+                  Ataque para frente rapidamente após esquivar.</p>
+                  <p>=========================</p>
+                  <p>Segure ATAQUE  + DASH</p>
+                  <p>=========================</p>
+                  <p>O Mestre do Ferrão Oro é encontrado na Borda do Reino.</p></td>
+                  <p>=========================</p>
+                  <p>única arte que custa <img src="img/Geo.svg" width="32" height="32"></p>
+                </tr>
+                <tr>
+                  <td><img src="img/artes/GreatSlash.png" class="table-img" height="100" width="100"><p>Corte Ciclone</p></td></p>
+                  <td><p>Adquirido do Mestre do Ferrão Sheo</p>
+                  <p>A Arte do Ferrão marca do Mestre do Ferrão Sheo. 
+                  Um ataque a frente que aumenta a área de ataque do Ferrão.</p>
+                  <p>========================</p>
+                  <p>Segure ATAQUE, solte</p>
+                  <p>========================</p>
+                  <p>O Mestre do Ferrão Sheo é encontrado na extrema esquerda do caminho verde.</p></td>
+                </tr>
+               </tbody> 
             </table>
         </div>
       </div>
       <div class="rightcolumn">
-        <div class="card">
+          <div class="card" id="mycard">
             <h2>Fato curioso sobre Hollow Knight</h2>
             <p class="Justify">Você sabia que o personagem principal de Hollow Knight foi retirado de um projeto anterior da Team Cherry chamado Hungry Knight,
             que foi realizado em menos de 48 horas em um encontro de desenvolvedores? Isso é um exemplo interessante de como as ideias podem 
             evoluir e se transformar ao longo do tempo! 😊</p>
             <div id="liveAlertPlaceholder"></div>
             <button type="button" class="btn btn-secondary" id="liveAlertBtn">Gostaria de aprender uma curiosidade?</button>
-        </div>
-          <div class="card">
+          </div>
+          <div class="card" id="mycard">
             <h3>Top runners</h3>
-            <p>em primeiro 1°lugar skate king com 31m 24s de LRT(load removed time)</p>
+            <p class="Justify">em primeiro 1°lugar skate king com 31m 24s de LRT(load removed time)</p>
             <div class="ratio ratio-16x9">
               <iframe src="https://www.youtube.com/embed/-rqbJHLa9fM?si=XmaqCAe8doHWdbGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <p>video no qual ele alcançou 1°lugar</p>
-            <p>Caso queira ver diretamente no Youtube<a href="https://youtu.be/-rqbJHLa9fM" class="badge bg-dark" target="_blank">clique aqui</a></p>
+            <p class="Justify">video no qual ele alcançou 1°lugar</p>
+            <p class="Justify">Caso queira ver diretamente no Youtube<a href="https://youtu.be/-rqbJHLa9fM" class="badge bg-dark" target="_blank">clique aqui</a></p>
           </div>
-          <div class="card">
-            <p>já em 2°lugar temos lep com 31m 39s de LRT</p>
+          <div class="card" id="mycard">
+            <p class="Justify">já em 2°lugar temos lep com 31m 39s de LRT</p>
             <div class="ratio ratio-16x9">
               <iframe src="https://www.youtube.com/embed/l0-7DY13QqM" title="HK Any% NMG in 31:39 (Current PB)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <p>video no qual ele alcançou 2°lugar</p>
-            <div class="alert alert-warning" role="alert">
-            Esse vídeo não está funcionando. <a href="https://youtu.be/-rqbJHLa9fM" class="alert-link">Clique aqui</a> para vê-lo completo.
+              <p class="Justify">video no qual ele alcançou 2°lugar</p>
+              <div class="alert alert-warning" role="alert">
+              Esse vídeo não está funcionando. <a href="https://youtu.be/-rqbJHLa9fM" class="alert-link">Clique aqui</a> para vê-lo completo.
             </div>
           </div>
-          <div class="card">
-            <p>e por ultimo mas não menos importante temos jackmanmarcus com 31m 46s de LRT </p>
+          <div class="card" id="mycard">
+            <p class="Justify">e por ultimo mas não menos importante temos jackmanmarcus com 31m 46s de LRT </p>
             <div class="ratio ratio-16x9">
               <iframe src="https://www.youtube.com/embed/5KSSwCc_Q6Y?si=lcpUgEOgu43Voa2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-            <p>video no qual ele alcançou 3°lugar</p>
-            <p>Caso queira ver diretamente no Youtube<a href="https://youtu.be/5KSSwCc_Q6Y?si=4nlGekyNKxAzQIjF" class="badge bg-dark" target="_blank">clique aqui</a></p>
-       </div>
-      </div>
-
-    <div class="footer">
-      <p> Copyright 2024 por Ga069767 Data. Todos os direitos reservados.</p>
+            <p class="Justify">video no qual ele alcançou 3°lugar</p>
+            <p class="Justify">Caso queira ver diretamente no Youtube<a href="https://youtu.be/5KSSwCc_Q6Y?si=4nlGekyNKxAzQIjF" class="badge bg-dark" target="_blank">clique aqui</a></p>
+          </div>
+        </div>
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="img/hollow(2).png" class="rounded me-2" alt="Logo" width="20" height="20">
+                <strong class="me-auto">Notificação</strong>
+                <small>Agora</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Gostou da curiosidade?
+            </div>
+        </div>
     </div>
+
+    <footer class="footer bg-light py-3">
+        <div class="container">
+            <p class="text-muted">Copyright 2024 por Ga069767 Data. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     
     <script src="JS/bootstrap.bundle.min.js"></script>
     <script src="JS/all.min.js"></script>
     <script src="JS/h.js"></script> 
   </body>
 </html>
-
