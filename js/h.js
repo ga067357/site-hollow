@@ -11,12 +11,6 @@ const appendAlert = (message, type) => {
   alertPlaceholder.append(wrapper)
 }
 
-const alertTrigger = document.getElementById('liveAlertBtn')
-if (alertTrigger) {
-  alertTrigger.addEventListener('click', () => {
-    appendAlert('No desenvolvimento de Hollow Knight, as inspirações da Team Cherry foram jogos como zelda II,Super metroid e Castlevania: Aria of Sorrow, e você tambem sabia que O modelo de movimento em Hollow Knight veio das séries Mega Man e Mega Man X.', 'success')
-  })
-}
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
@@ -24,6 +18,7 @@ function toggleTheme() {
   var body = document.body;
   var navbar = document.getElementById("myNavbar");
   var cards = document.querySelectorAll(".card");
+  var footer = document.querySelector(".footer");
 
   if (body.classList.contains("dark-mode")) {
       body.classList.remove("dark-mode");
@@ -32,6 +27,8 @@ function toggleTheme() {
           card.classList.remove("bg-dark");
           card.classList.add("bg-light");
       });
+      footer.classList.remove("bg-dark");
+      footer.classList.add("bg-light");
   } else {
       body.classList.add("dark-mode");
       navbar.setAttribute("data-bs-theme", "dark");
@@ -39,6 +36,8 @@ function toggleTheme() {
           card.classList.remove("bg-light");
           card.classList.add("bg-dark");
       });
+      footer.classList.remove("bg-light");
+      footer.classList.add("bg-dark");
   }
 }
 document.addEventListener('DOMContentLoaded', function () {
