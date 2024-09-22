@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vida e Alma</title>
+    <meta name="author" content="gabriel henrique">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/css-site.css"> 
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/hollow(2).png">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="myNavbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Hollow.svg" width="32" height="32">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="mapas.html">Mapas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="amuletos.html">Amuletos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="minerios-palidos.html">Minérios Pálidos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dlcs.html">DLC</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Items
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ferrao.html">Ferrão</a></li>
+                <li><a class="dropdown-item" href="#"><strong>Artes do Ferrão</strong></a></li>
+                <li><a class="dropdown-item" href="magias.html">Magias</a></li>
+                <li><a class="dropdown-item" href="vida_alma.html">Vida e Alma</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="contato.html"><span class="badge"><button type="button" class="btn" width="20" height="20"><i class="fa-solid fa-user" style="padding-left: 5px; padding-right: 15px;"></i>Contato</button></span></a>
+          <span class="badge"><button type="button" class="btn" onclick="toggleTheme()" width="20" height="20"><i class="fa-solid fa-circle-half-stroke " style="padding-left: 5px; padding-right: 15px;"></i>Light/Dark theme</button></span>
+        </div>
+      </div>
+    </nav>
+    <div class="row">
+      <div class="leftcolumn">
+        <div class="card" id="mycard">      
+          <h2>Como funciona a vida?</h2>
+          <p class="Justify">Vida é representada em Máscaras, mostradas no canto superior esquerdo da tela. 
+            O Cavaleiro começa o jogo com 5 máscaras, e pode obter mais coletando Fragmentos de Máscara. 
+            4 Fragmentos de Máscara fazem uma nova máscara de vida, até um máximo de 9 máscaras. Vida é perdida ao levar dano, 
+            tanto por inimigos ou por perigos do ambiente. Vida pode ser recuperada ao descansar em um Banco ou usando Foco.
+            <figure class="figure">
+              <img src="img/v_a/HP_mask.png" class="card-img-top figure-img img-fluid img-hollow2" alt="capa">
+            </figure>
+            <h3>Fragmentos de máscaras</h3>
+            <p class="Justify">Fragmentos de Máscara são partes de Máscaras Antigas. 4 Fragmentos de Máscara são necessários para completar uma Máscara Antiga, 
+              que aumenta a Vida do Cavaleiro por um ponto.
+              Com um total de 16 Fragmentos de Máscara no jogo, o Cavaleiro pode aumentar sua vida por 4 pontos, 
+              para um máximo de 9 de vida, sem contar bônus de Amuletos e Casulos de Sangue Vital.</p>
+              <figure class="figure">
+                <img src="img/v_a/Health_Piece.png" class="card-img-top figure-img img-fluid img-hollow2" alt="capa">
+              </figure>
+            <h2>Máscaras de Sangue Vital</h2>
+            <p class="Justify">Nesse jogo nós tambem temos as Máscaras de Sangue Vital, concedidas pelas Sementes da Vida e por certos Amuletos, 
+            são máscaras temporárias que não podem ser restauradas usando Foco. Máscaras de Sangue Vital extraídas de 
+            Sementes da Vida não serão regeneradas ao descansar em um banco, enquanto que as que derivam de Amuletos serão restauradas.</p>
+            <figure class="figure">
+              <img src="img/v_a/Lifeblood_mask.png" class="card-img-top figure-img img-fluid img-hollow2" alt="capa">
+            </figure>
+            <h2>O que é Sombra?</h2>
+            <p class="Justify">Quando as máscaras são reduzidas a 0, a carapaça do cavaleiro se estilhaça, liberando suas Sombra. 
+            Depois que a tela voltar a ficar preta, o Cavaleiro estará de volta ao banco em que descansou pela última vez, 
+            com um terço do medidor de ALMA faltando e sem nenhum Geo. Retornar à área onde o Cavaleiro morreu e derrotar 
+            a Sombra restaura o medidor de ALMA perdido e recupera o Geo que foi perdido.</p>
+            <figure class="figure">
+              <img src="img/v_a/Map_Pin_Shade.png" class="card-img-top figure-img img-fluid img-hollow2" alt="capa">
+            </figure>
+        </div>
+        <div class="card" id="mycard">
+          <h2>O que é alma?</h2>
+          <p class="Justify">ALMA é representada como uma máscara circular à esquerda da vida. ALMA é usada para conjurar Magias, 
+          bem como curar a vida usando Foco. Atacar inimigos com o Ferrão é a principal fonte para recuperar ALMA, 
+          embora outras ferramentas e objetos também concedam ALMA. A coleta de três Fragmento de Máscara aumenta o máximo de ALMA.</p>
+          <figure class="figure">
+            <img src="img/v_a/Soul_Meter.png" class="card-img-top figure-img img-fluid img-hollow2" alt="capa">
+          </figure>
+        </div>
+      </div>  
+      <div class="rightcolumn">
+        <div class="card" id="mycard">
+          <h2>Fato curioso sobre Hollow Knight</h2>
+          <p class="Justify">Você sabia que o personagem principal de Hollow Knight foi retirado de um projeto anterior da Team Cherry chamado Hungry Knight,
+          que foi realizado em menos de 48 horas em um encontro de desenvolvedores? Isso é um exemplo interessante de como as ideias podem 
+          evoluir e se transformar ao longo do tempo! 😊</p>
+          <div id="liveAlertPlaceholder"></div>
+          <button type="button" class="btn btn-secondary" id="liveAlertBtn">Gostaria de aprender uma curiosidade?</button>
+        </div>
+        <div class="card" id="mycard">
+          <h3>Top runners</h3>
+          <p class="Justify">em primeiro 1°lugar skate king com 31m 24s de LRT(load removed time)</p>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/-rqbJHLa9fM?si=XmaqCAe8doHWdbGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <p class="Justify">video no qual ele alcançou 1°lugar</p>
+          <p class="Justify">Caso queira ver diretamente no Youtube<a href="https://youtu.be/-rqbJHLa9fM" class="badge bg-dark" target="_blank">clique aqui</a></p>
+        </div>
+        <div class="card" id="mycard">
+          <p class="Justify">já em 2°lugar temos lep com 31m 39s de LRT</p>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/l0-7DY13QqM" title="HK Any% NMG in 31:39 (Current PB)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+            <p class="Justify">video no qual ele alcançou 2°lugar</p>
+            <div class="alert alert-warning" role="alert">
+            Esse vídeo não está funcionando. <a href="https://youtu.be/-rqbJHLa9fM" class="alert-link">Clique aqui</a> para vê-lo completo.
+          </div>
+        </div>
+        <div class="card" id="mycard">
+          <p class="Justify">e por ultimo mas não menos importante temos jackmanmarcus com 31m 46s de LRT </p>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/5KSSwCc_Q6Y?si=lcpUgEOgu43Voa2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <p class="Justify">video no qual ele alcançou 3°lugar</p>
+          <p class="Justify">Caso queira ver diretamente no Youtube<a href="https://youtu.be/5KSSwCc_Q6Y?si=4nlGekyNKxAzQIjF" class="badge bg-dark" target="_blank">clique aqui</a></p>
+        </div>
+      </div>
+  <!-- Toast Notification -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+              <img src="img/hollow(2).png" class="rounded me-2" alt="Logo" width="20" height="20">
+              <strong class="me-auto">Notificação</strong>
+              <small>Agora</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+              Gostou da curiosidade?
+          </div>
+      </div>
+  </div>
+
+  <footer class="footer bg-light">
+      <p>Copyright 2024 por Ga069767 Data. Todos os direitos reservados.</p>
+  </footer>
+    
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/h.js"></script> 
+  </body>
+</html>
+
