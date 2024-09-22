@@ -7,14 +7,51 @@
         <meta name="author" content="gabriel henrique">
         <meta name="keywords" content="HTML, CSS, JavaScript">
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/css-site.css"> 
         <link rel="stylesheet" href="css/estilo.css">
         <link rel="icon" href="img/hollow(2).png">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="myNavbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="img/Hollow.svg" width="32" height="32">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="mapas.html">Mapas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="Amuletos.html">Amuletos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="minerios-palidos.html">Minérios Pálidos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="dlcs.html">DLCs</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Items
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="ferrao.html">Ferrão</a></li>
+                      <li><a class="dropdown-item" href="artes.html">Artes do Ferrão</a></li>
+                      <li><a class="dropdown-item" href="magias.html">Magias</a></li>
+                      <li><a class="dropdown-item" href="vida_alma.html">Vida e Alma</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <a href="contato.html"><span class="badge"><button type="button" class="btn" width="20" height="20"><i class="fa-solid fa-user" style="padding-left: 5px; padding-right: 15px;"></i>Contato</button></span></a>
+                <span class="badge"><button type="button" class="btn" onclick="toggleTheme()" width="20" height="20"><i class="fa-solid fa-circle-half-stroke" style="padding-left: 5px; padding-right: 15px;"></i>Light/Dark theme</button></span>
+              </div>
+            </div>
+          </nav>
         <div class="row">
             <div class="leftcolumn">
                 <div class="card contact-form">
@@ -46,8 +83,7 @@
                     <ul>
                         <li><strong>Telefone Comercial:</strong> (11) 1234-5678</li>
                         <li><strong>Email Comercial:</strong> contato@exemplo.com</li>
-                    </ul>
-                    
+                    </ul>           
                 </div>
             </div>
             <div class="rightcolumn">
