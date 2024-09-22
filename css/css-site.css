@@ -3,6 +3,11 @@
      max-width: 100%; /* Adiciona uma largura máxima para garantir responsividade */
      height: auto; /* Mantém a proporção da imagem ao redimensionar */
 }
+.img-hollow2{
+     width: 50px;
+     height: 60px;
+     max-width: 100%;
+}
 
 .Informação {
      color: grey;
@@ -68,26 +73,6 @@ max-width: 100%;
 .transformar {
      transform: rotate(45deg);
 }
-.dark-mode {
-     background-color: #333;
-     color: #fff;
- }
- 
- .dark-mode .card {
-     background-color: #000;
-     color: #fff;
- }
- 
- .card.bg-light {
-     background-color: #f8f9fa;
-     color: #212529;
- }
- 
- .card.bg-dark {
-     background-color: #212529;
-     color: #fff;
- }
- 
 
 .badge :hover{
      background-color: rgb(191, 191, 191);
@@ -100,3 +85,31 @@ max-width: 100%;
      color: #000000;
 }
 
+.toast-body{
+     color: black;
+}
+
+.dark-mode {
+     background-color: #333;
+     color: #fff;
+ }
+ .dark-mode .card {
+     background-color: #000;
+     color: #fff;
+ }
+ .card.bg-light {
+     background-color: #f8f9fa;
+     color: #212529;
+ }
+ .card.bg-dark {
+     background-color: #212529;
+     color: #fff;
+ }
+ .footer.bg-light {
+     background-color: #f8f9fa;
+     color: #212529;
+ }
+ .footer.bg-dark {
+     background-color: #212529;
+     color: #ffffff;
+ }
