@@ -15,40 +15,41 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" id="myNavbar">
       <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-              <img src="img/Hollow.svg" width="32" height="32">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="mapas.html">Mapas</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="amuletos.html">Amuletos</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#"><strong>Minérios Pálidos</strong></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="dlcs.html">DLCs</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Items
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="ferrao.html">Ferrão</a></li>
-                      <li><a class="dropdown-item" href="artes.html">Artes do Ferrão</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </li>
+        <a class="navbar-brand" href="index.html">
+          <img src="img/Hollow.svg" width="32" height="32">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="mapas.html">Mapas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Amuletos.html">Amuletos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="minerios-palidos.html"><strong>Minérios Pálidos</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="dlcs.html">DLCs</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Items
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ferrao.html">Ferrão</a></li>
+                <li><a class="dropdown-item" href="artes.html">Artes do Ferrão</a></li>
+                <li><a class="dropdown-item" href="magias.html">Magias</a></li>
+                <li><a class="dropdown-item" href="vida_alma.html">Vida e Alma</a></li>
               </ul>
-              <span class="badge"><button type="button" class="btn" onclick="toggleTheme()" width="20" height="20"><i class="fa-solid fa-circle-half-stroke " style="padding-left: 5px; padding-right: 15px;"></i>Light/Dark theme</button></span>
-          </div>
+            </li>
+          </ul>
+          <a href="contato.html"><span class="badge"><button type="button" class="btn" width="20" height="20"><i class="fa-solid fa-user" style="padding-left: 5px; padding-right: 15px;"></i>Contato</button></span></a>
+          <span class="badge"><button type="button" class="btn" onclick="toggleTheme()" width="20" height="20"><i class="fa-solid fa-circle-half-stroke" style="padding-left: 5px; padding-right: 15px;"></i>Light/Dark theme</button></span>
+        </div>
       </div>
     </nav>
   <div class="row">
@@ -74,49 +75,72 @@
       </div>
     </div>
     <div class="rightcolumn">
-        <div class="card">
-            <h2>Fato curioso sobre Hollow Knight</h2>
-            <p class="Justify">Você sabia que o personagem principal de Hollow Knight foi retirado de um projeto anterior da Team Cherry chamado Hungry Knight,
-            que foi realizado em menos de 48 horas em um encontro de desenvolvedores? Isso é um exemplo interessante de como as ideias podem 
-            evoluir e se transformar ao longo do tempo! 😊</p>
-            <div id="liveAlertPlaceholder"></div>
-            <button type="button" class="btn btn-secondary" id="liveAlertBtn">Gostaria de aprender uma curiosidade?</button>
+      <div class="card">
+        <h2>Fato curioso sobre Hollow Knight</h2>
+        <p class="Justify">Você sabia que o personagem principal de Hollow Knight foi retirado de um projeto anterior da Team Cherry chamado Hungry Knight,
+        que foi realizado em menos de 48 horas em um encontro de desenvolvedores? Isso é um exemplo interessante de como as ideias podem 
+        evoluir e se transformar ao longo do tempo! 😊</p>
+        <p class="d-inline-flex gap-1">
+          <button class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="liveAlertBtn">
+            Gostaria de aprender uma curiosidade?
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <p class="Justify">
+          No desenvolvimento de Hollow Knight, as inspirações da Team Cherry foram jogos como zelda II,Super metroid e Castlevania: Aria of Sorrow, e você 
+          tambem sabia que O modelo de movimento em Hollow Knight veio das séries Mega Man e Mega Man X.
+          </p>
         </div>
-          <div class="card">
-            <h3>Top runners</h3>
-            <p>em primeiro 1°lugar skate king com 31m 24s de LRT(load removed time)</p>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/-rqbJHLa9fM?si=XmaqCAe8doHWdbGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p>video no qual ele alcançou 1°lugar</p>
-            <p>Caso queira ver diretamente no Youtube<a href="https://youtu.be/-rqbJHLa9fM" class="badge bg-dark" target="_blank">clique aqui</a></p>
+      </div>
+        <div class="card">
+          <h3>Top runners</h3>
+          <p>em primeiro 1°lugar skate king com 31m 24s de LRT(load removed time)</p>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/-rqbJHLa9fM?si=XmaqCAe8doHWdbGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-          <div class="card">
-            <p>já em 2°lugar temos lep com 31m 39s de LRT</p>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/l0-7DY13QqM" title="HK Any% NMG in 31:39 (Current PB)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p>video no qual ele alcançou 2°lugar</p>
-            <div class="alert alert-warning" role="alert">
-            Esse vídeo não está funcionando. <a href="https://youtu.be/-rqbJHLa9fM" class="alert-link">Clique aqui</a> para vê-lo completo.
-            </div>
+          <p>video no qual ele alcançou 1°lugar</p>
+          <p>Caso queira ver diretamente no Youtube<a href="https://youtu.be/-rqbJHLa9fM" class="badge bg-dark" target="_blank">clique aqui</a></p>
+        </div>
+        <div class="card">
+          <p>já em 2°lugar temos lep com 31m 39s de LRT</p>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/l0-7DY13QqM" title="HK Any% NMG in 31:39 (Current PB)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-          <div class="card">
-            <p>e por ultimo mas não menos importante temos jackmanmarcus com 31m 46s de LRT </p>
-            <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/5KSSwCc_Q6Y?si=lcpUgEOgu43Voa2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-            <p>video no qual ele alcançou 3°lugar</p>
-            <p>Caso queira ver diretamente no Youtube<a href="https://youtu.be/5KSSwCc_Q6Y?si=4nlGekyNKxAzQIjF" class="badge bg-dark" target="_blank">clique aqui</a></p>
-       </div>
+          <p>video no qual ele alcançou 2°lugar</p>
+          <div class="alert alert-warning" role="alert">
+          Esse vídeo não está funcionando. <a href="https://youtu.be/-rqbJHLa9fM" class="alert-link">Clique aqui</a> para vê-lo completo.
+          </div>
+        </div>
+        <div class="card">
+          <p>e por ultimo mas não menos importante temos jackmanmarcus com 31m 46s de LRT </p>
+          <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/5KSSwCc_Q6Y?si=lcpUgEOgu43Voa2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <p>video no qual ele alcançou 3°lugar</p>
+          <p>Caso queira ver diretamente no Youtube<a href="https://youtu.be/5KSSwCc_Q6Y?si=4nlGekyNKxAzQIjF" class="badge bg-dark" target="_blank">clique aqui</a></p>
+        </div>
       </div>
 
-    <div class="footer">
-      <p> Copyright 2024 por Ga069767 Data. Todos os direitos reservados.</p>
-    </div>
+    <!-- Toast Notification -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+              <img src="img/hollow(2).png" class="rounded me-2" alt="Logo" width="20" height="20">
+              <strong class="me-auto">Notificação</strong>
+              <small>Agora</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+              Gostou da curiosidade?
+          </div>
+      </div>
+  </div>
+
+  <footer class="footer bg-light">
+    <p>Copyright 2024 por Ga069767 Data. Todos os direitos reservados.</p>
+  </footer>
         <script src="JS/bootstrap.bundle.min.js"></script>
         <script src="JS/all.min.js"></script>
         <script src="JS/h.js"></script> 
   </body>
 </html>
-
