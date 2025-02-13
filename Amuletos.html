@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Amuletos</title>
+      <meta name="author" content="gabriel henrique">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/all.min.css">
+      <link rel="stylesheet" href="css/css-site.css">
+      <link rel="stylesheet" href="css/estilo.css">
+      <link rel="icon" href="img/hollow(2).png">
+    </head>
+    <body class="body-hollow">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary" id="myNavbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="img/Hollow.svg" width="32" height="32">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="mapas.html">Mapas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="Amuletos.html"><strong>Amuletos</strong></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="minerios-palidos.html">Minérios Pálidos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dlcs.html">DLCs</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Items
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="ferrao.html">Ferrão</a></li>
+                  <li><a class="dropdown-item" href="artes.html">Artes do Ferrão</a></li>
+                  <li><a class="dropdown-item" href="magias.html">Magias</a></li>
+                  <li><a class="dropdown-item" href="vida_alma.html">Vida e Alma</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a href="contato.html"><span class="badge"><button type="button" class="btn" width="20" height="20"><i class="fa-solid fa-user" style="padding-left: 5px; padding-right: 15px;"></i>Contato</button></span></a>
+            <span class="badge"><button type="button" class="btn" onclick="toggleTheme()" width="20" height="20"><i class="fa-solid fa-circle-half-stroke" style="padding-left: 5px; padding-right: 15px;"></i>Light/Dark theme</button></span>
+          </div>
+        </div>
+      </nav>
+          <div class="row">
+            <div class="leftcolumn">
+              <div class="card" id="mycard">
+                <h2>O que são encaixes de amuleto?</h2>
+                <p>Os Encaixes de Amuletos são necessários para equipar os Amuletos. Amuletos diferentes exigem um número diferente de Encaixes.
+                O Cavaleiro começa com 3 Encaixes. Mais 8 podem ser encontrados durante o jogo, totalizando 11 Encaixes.
+                cada amuleto nescecita de uma quantidade de encaixes sendo de um encaixe até cinco encaixes sendo que o que precisa de cinco
+                é um amuleto especial. e tambem um que não custa Encaixes.</p>
+                <img src= "img/encaixe.jpg" class="img-fluid" height="300" width="300" alt="encaixe">
+              </div>
+              <div class="card" id="mycard">
+                <h2>Para que servem os Amuletos?</h2>
+                <p>Os amuletos em Hollow Knight são acessórios especiais que oferecem vários bônus e habilidades especiais ao jogador.
+                  Eles são equipados utilizando encaixes, e só podem ser equipados e desequipados enquanto o jogador estiver sentado em um banco.
+                  Além disso, existe um estado chamado “Sobrecarregado”, que permite ao jogador equipar um amuleto que requer mais encaixes do que 
+                  os disponíveis. No entanto, isso faz com que o dano recebido pelo jogador seja dobrado.
+                  Portanto, os amuletos servem para personalizar e melhorar as habilidades do jogador, permitindo diferentes estratégias
+                  e estilos de jogo. No entanto, eles devem ser usados com cuidado, pois a escolha e combinação de amuletos podem afetar 
+                  significativamente a dificuldade e jogabilidade do jogo</p>
+                  <caption><h1>Amuletos existentes no jogo</h1></caption>
+                  <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" aria-current="page">Pagina 1</li>
+                    </ol>
+                  </nav>
+                  <div class="table-container">
+                    <table class="table table-striped table-hover table-bordered table-dark">
+                      <thead>
+                      <tr>
+                        <th>amuletos</th>
+                        <th>funçoes</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><img src="img/png/Wayward_Compass.png" class="table-img-2" height="64" width="64"> <p>Bússola caprichosa</p> </td></p>
+                          <td><p>Sussurra sua localização ao portador 
+                            sempre que o mapa estiver aberto, 
+                            permitindo que os aventureiros 
+                            identifiquem sua localização atual.</p></td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/png/Gathering_Swarm.png" class="table-img" height="64" width="64"> 
+                            <p>Enxame de colecionadores</p> 
+                          </td>
+                          <td>
+                            <p>Um enxame seguirá o portador e coletará quaisquer Geo deixado no chão.
+                            Útil para aqueles que não conseguem deixar nada para trás, 
+                            por mais insignificante que seja.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/png/Steady_Body.png" class="table-img" height="64" width="64">
+                            <p>Corpo firme</p>
+                          </td>
+                          <td>
+                            <p>Mantém seu portador firme, prevenindo-o de recuar quando atingir um inimigo com o Ferrão.
+                            Permite que se mantenha firme e continue atacando.</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td><img src="img/png/Thorns_of_Agony.png" class="table-img" height="64" width="64">
+                            <p>Espinhos da agonia</p>
+                          </td>
+                          <td>
+                            <p>Sente a dor do seu portador e ataca o mundo ao seu redor.
+                            Quando dano é recebido, brotam-se vinhas espinhentas que machucam inimigos próximos.</p>
+                          </td>
+                        </tr> 
+                        <tr>
+                          <td><img src="img/png/Fury_of_the_Fallen.png" class="table-img" height="64" width="64">
+                            <p>Fúria dos Caídos</p>
+                          </td>
+                          <td>
+                            <p>Incorpora a fúria e o heroísmo que vem sobre aqueles que estão prestes a morrer.
+                            Quando próximo da morte, a força do portador irá aumentar</p>
+                          </td>
+                        </tr> 
+                        <tr>
+                          <td><img src="img/png/Defender27s_Crest.png" class="table-img" height="64" width="64">
+                            <p>insignia do defensor</p>
+                          </td>
+                          <td>
+                            <p>Amuleto único concedido pelo Rei de Hallownest ao seu mais leal cavaleiro. Gasto e sujo, mas bem cuidado.
+                            O portador irá emitir um odor heróico(o personagem ira ficar soldando uma novem toxica que da dano aos inimigos).</p>
+                          </td>
+                        </tr> 
+                        <tr>
+                          <td><img src="img/png/Grubsong.png" class="table-img" height="64" width="64">
+                            <p>canção das larvas</p>
+                          </td>
+                          <td>
+                            <p>Contém a gratidão de larvas que foram salvas.
+                            Recebe ALMA sempre que dano for recebido.</p>
+                          </td>
+                        </tr> 
+                        <tr>
+                          <td><img src="img/png/Grubberfly's_Elegy.png" class="table-img" height="64" width="64">
+                            <p>Elegia da Larvamosca</p>
+                          </td>
+                          <td>
+                            <p>Contém a poesia das larvas que evoluíram para o próximo estágio de suas vidas. Infunde armas com uma energia sagrada.
+                            Quando o portador está com a vida cheia, ele lançará feixes de energia branca através de seu ferrão.</p>
+                          </td>
+                        </tr> 
+                      </tbody>
+                    </table>
+                    <nav aria-label="Page navigation example">
+                      <ul class="pagination">
+                        <li class="page-item disabled">
+                          <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                          </a>
+                        </li>
+                        <li class="page-item disabled">
+                          <a class="page-link">1</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="amuletos_2.html">2</a></li>
+                        <li class="page-item"><a class="page-link" href="amuletos_3.html">3</a></li>
+                        <li class="page-item"><a class="page-link" href="amuletos_4.html">4</a></li>
+                        <li class="page-item"><a class="page-link" href="amuletos_5.html">5</a></li>
+                        <li class="page-item">
+                          <a class="page-link" href="amuletos_2.html" aria-label="Proximo">
+                            <span aria-hidden="true">&raquo;</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+              </div>
+            </div>
+            <div class="rightcolumn">
+              <div class="card" id="mycard">
+                  <h2>Fato curioso sobre Hollow Knight</h2>
+                  <p class="Justify">Você sabia que o personagem principal de Hollow Knight foi retirado de um projeto anterior da Team Cherry chamado Hungry Knight,
+                  que foi realizado em menos de 48 horas em um encontro de desenvolvedores? Isso é um exemplo interessante de como as ideias podem 
+                  evoluir e se transformar ao longo do tempo! 😊</p>
+                  <p class="d-inline-flex gap-1">
+                    <button class="btn btn-secondary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" id="liveAlertBtn">
+                      Gostaria de aprender uma curiosidade?
+                    </button>
+                  </p>
+                  <div class="collapse" id="collapseExample">
+                    <p class="Justify">
+                    No desenvolvimento de Hollow Knight, as inspirações da Team Cherry foram jogos como zelda II,Super metroid e Castlevania: Aria of Sorrow, e você 
+                    tambem sabia que O modelo de movimento em Hollow Knight veio das séries Mega Man e Mega Man X.
+                    </p>
+                  </div>
+              </div>
+              <div class="card" id="mycard">
+                <h3>Top runners</h3>
+                <p>em primeiro 1°lugar skate king com 31m 24s de LRT(load removed time)</p>
+                  <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/-rqbJHLa9fM?si=XmaqCAe8doHWdbGp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                  </div>
+                <p>video no qual ele alcançou 1°lugar</p>
+                <p>Caso queira ver diretamente no Youtube<a href="https://youtu.be/-rqbJHLa9fM" class="badge bg-dark" target="_blank">clique aqui</a></p>
+              </div>
+                <div class="card" id="mycard">
+                  <p>já em 2°lugar temos lep com 31m 39s de LRT</p>
+                    <div class="ratio ratio-16x9">
+                      <iframe src="https://www.youtube.com/embed/l0-7DY13QqM" title="HK Any% NMG in 31:39 (Current PB)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  <p>video no qual ele alcançou 2°lugar</p>
+                  <div class="alert alert-warning" role="alert">
+                    Esse vídeo não está funcionando. <a href="https://youtu.be/-rqbJHLa9fM" class="alert-link">Clique aqui</a> para vê-lo completo.
+                  </div>
+                </div>
+                <div class="card" id="mycard">
+                  <p>e por ultimo mas não menos importante temos jackmanmarcus com 31m 46s de LRT </p>
+                    <div class="ratio ratio-16x9">
+                      <iframe src="https://www.youtube.com/embed/5KSSwCc_Q6Y?si=lcpUgEOgu43Voa2v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                  <p>video no qual ele alcançou 3°lugar</p>
+                  <p>Caso queira ver diretamente no Youtube<a href="https://youtu.be/5KSSwCc_Q6Y?si=4nlGekyNKxAzQIjF" class="badge bg-dark" target="_blank">clique aqui</a></p>
+              </div>
+            </div>
+          </div>
+          <!-- Toast Notification -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="myToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="toast-header">
+              <img src="img/hollow(2).png" class="rounded me-2" alt="Logo" width="20" height="20">
+              <strong class="me-auto">Notificação</strong>
+              <small>Agora</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+          </div>
+          <div class="toast-body">
+              Gostou da curiosidade?
+          </div>
+      </div>
+    </div>
+
+  <footer class="footer bg-light">
+    <p class="text-muted">Copyright 2024 por Ga069767 Data. Todos os direitos reservados.</p>
+  </footer>
+          <script src="js/bootstrap.bundle.min.js"></script>
+          <script src="js/all.min.js"></script>
+          <script src="js/h.js"></script> 
+    </body>
+</html>
