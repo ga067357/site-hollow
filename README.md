@@ -1,59 +1,87 @@
-# site-hollow
+# 🌑 site-hollow
 
-Um site estático simples.
+Site estático simples feito com HTML, CSS e JavaScript.
 
-Este repositório contém arquivos de um site estático (principalmente HTML, com alguns arquivos CSS e JavaScript). Use este README como referência rápida para entender, executar e contribuir para o projeto.
+Projeto com foco em páginas estáticas responsivas e estrutura leve, ideal para páginas institucionais, portfólios ou landing pages.
 
-## Tecnologias
+## 🔗 Acesso ao Projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/ga067357/site-hollow.git
+cd site-hollow
+```
+
+Abra `index.html` em um navegador ou sirva com um servidor HTTP simples:
+
+- Com Python 3:
+  ```bash
+  python -m http.server 8000
+  # abra http://localhost:8000
+  ```
+
+- Com Node.js (http-server):
+  ```bash
+  npx http-server -p 8000
+  # abra http://localhost:8000
+  ```
+
+## 📋 Funcionalidades
+
+- Páginas HTML organizadas e prontas para uso
+- Layout responsivo com CSS simples
+- Scripts JS leves para interatividade básica
+- Estrutura pensada para fácil customização e deploy em GitHub Pages
+
+## 🛠️ Tecnologias
 
 - HTML (~96.9%)
 - CSS (~2.1%)
 - JavaScript (~1%)
 
-## Como usar
+## 📁 Estrutura do Projeto (exemplo)
 
-1. Clone o repositório:
+```
+site-hollow/
+├── index.html               # Página inicial
+├── about.html               # Página exemplo (se existir)
+├── css/
+│   └── style.css            # Estilos principais
+├── js/
+│   └── main.js              # Scripts (se houver)
+├── assets/                  # Imagens e recursos
+└── README.md
+```
 
-   git clone https://github.com/ga067357/site-hollow.git
-   cd site-hollow
+> Ajuste conforme a organização real do repositório.
 
-2. Abra o arquivo `index.html` em um navegador moderno (duplo clique) ou sirva os arquivos por um servidor HTTP simples, por exemplo:
+## ✅ Como personalizar
 
-   - Com Python 3:
-     python -m http.server 8000
-     Depois abra http://localhost:8000
+- Edite os arquivos `.html` para alterar conteúdo e estrutura das páginas
+- Modifique `css/style.css` para ajustar cores, tipografia e layout
+- Adicione ou substitua imagens em `assets/`
 
-   - Com Node.js (http-server):
-     npx http-server -p 8000
+## 🧩 Contribuindo
 
-## Estrutura (exemplo)
+Contribuições são bem-vindas:
 
-A estrutura exata pode variar, mas normalmente você encontrará:
+- Abra uma issue para relatar bugs ou sugerir melhorias
+- Envie um pull request com uma descrição clara do que mudou
+- Mantenha o estilo de código consistente (HTML semântica, CSS organizado)
 
-- `index.html` — página inicial
-- Arquivos .html adicionais — páginas do site
-- `css/` ou arquivos `.css` — estilos
-- `js/` ou arquivos `.js` — scripts (se houver)
-- `assets/` ou `images/` — imagens e outros recursos
+## 📜 Licença
 
-Ajuste conforme a organização real do repositório.
+Se houver um arquivo `LICENSE` no repositório, ele prevalece. Se desejar que eu adicione uma licença (por exemplo MIT), diga qual prefere que eu crie.
 
-## Contribuindo
+## 👤 Mantenedor
 
-Contribuições são bem-vindas!
-
-- Abra uma issue para discutir grandes alterações ou problemas.
-- Envie um pull request com uma descrição clara do que mudou.
-- Siga o estilo do projeto ao adicionar HTML/CSS/JS.
-
-## Licença
-
-Se houver um arquivo `LICENSE` no repositório, ele prevalece. Se quiser que eu adicione uma licença (ex.: MIT), diga qual prefira e eu crio.
-
-## Contato
-
-Mantenedor: @ga067357 — https://github.com/ga067357
+@ga067357 — https://github.com/ga067357
 
 ---
 
-Se quiser, posso adaptar o README com mais detalhes específicos (descrição do site, screenshots, instruções de build, licença) — diga o que deseja incluir e eu atualizo o arquivo.
+Desenvolvido como site estático leve — se quiser, eu posso:
+- Adicionar badges (GitHub Pages, licença)
+- Incluir screenshots no README
+- Criar um deploy automático para GitHub Pages
+Diga qual melhoria prefere que eu faça e eu atualizo o README.
